@@ -1,0 +1,9 @@
+# serverless.yml
+
+myNextApplication:
+  component: "@sls-next/serverless-component@3.7.0"
+  inputs:
+    bucketName: floow-nextjs-serverless-int
+    build:
+      env:
+        ENVIRONMENT: ${env.ENVIRONMENT}
